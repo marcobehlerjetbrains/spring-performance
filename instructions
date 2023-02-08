@@ -1,0 +1,7 @@
+apt install openjdk-11-dbg
+
+$ gdb $JAVA_HOME/lib/server/libjvm.so -ex 'info address UseG1GC'
+
+
+# sysctl kernel.perf_event_paranoid=1
+# sysctl kernel.kptr_restrict=0
